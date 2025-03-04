@@ -1,0 +1,103 @@
+body {
+	background-color: rgb(130, 161, 177);
+	font-family: 'Merriweather', 'Times New Roman', Times, serif;
+}
+
+header {
+	background-color: blue;
+	background-image: linear-gradient(180deg, blue, black);
+	color: white;
+	font-size: large;
+	padding-top: 1px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	height: 150px;
+}
+
+body, header {
+	margin: 0;
+	padding: 0;
+}
+
+#nav-links {
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+	padding: 20px;
+	width: 100%;
+}
+
+#nav-links li:last-child {
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+header a, footer a {
+	padding: 20px;
+	text-decoration: none;
+}
+
+header li , footer li{
+	display: inline;
+}
+
+header a {
+	color: white;
+}
+
+footer {
+	font-size: 30px;
+	position: absolute; /*Poner el footer al final aunque el texto sea pequeño*/
+	bottom: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#user-info {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#stephen {
+	margin: 40px;
+    width: 300px;
+    height: 300px;
+    border-radius: 80%;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+	margin-left: 100px;
+}
+
+.profile-description {
+	padding: 0px 40px;
+	line-height: 1.5;
+	font-size: 25px;
+}
+
+.library {
+	display: flex;
+	justify-content: space-between;
+    flex-wrap: nowrap; /*Permite que los elementos se muevan a una nueva fila si es neceario*/
+    width: 100%;
+}
+
+.book {
+	box-shadow: 0 0 20px rgb(95, 95, 95);
+	margin: 10px;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+.imagen {
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	width: 200px;
+	height: 350px;
+}
