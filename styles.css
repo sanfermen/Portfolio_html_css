@@ -17,8 +17,8 @@ header {
 	overflow: hidden;
 	display: flex;
 	align-items: center;
-	height: 120px;
-	margin-bottom: 30px;
+	height: 100px;
+	margin-bottom: 10px;
 }
 
 #nav-links {
@@ -49,35 +49,55 @@ footer {
 	display: flex;
 	flex-flow: column;
     align-items: center;
+	justify-content: center;
+	width: 100%;
 	bottom: 0;
 }
 
 .profile-title {
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 	font-family: 'Creepster';
 	font-size: 4rem;
 	color: rgb(151, 8, 8);
 }
 
-#user-info {
+.user-info {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	width: 100%;
 	align-items: center;
 }
 
 #stephen {
-	margin: 40px;
+	margin: 2%;
     width: 300px;
     height: 300px;
     border-radius: 80%;
-	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+	.user-info {
+		display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+	.inputs {
+		margin: 20px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 }
 
 .profile-description {
-	padding: 0px 40px;
+	padding: 0px 20px;
 	line-height: 1.5;
 	font-size: 1.5rem;
 }
@@ -132,16 +152,20 @@ img {
 }
 
 fieldset {
-	width: 30rem;
+	width: 100%;
 }
 
-input {
+input, #favourite {
 	margin: 10px;
+	width: 100%;
 }
 
 .inputs {
 	margin: 20px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+}
+
+#contact-form input, #contact-form select{
+	font-size: 1.2rem;
 }
