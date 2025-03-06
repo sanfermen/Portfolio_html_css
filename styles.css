@@ -46,8 +46,10 @@ header li , footer li{
 
 footer {
 	font-size: 20px;
-	position: absolute; /*Poner el footer al final aunque el texto sea pequeño*/
-	bottom: 5%;
+	display: flex;
+	flex-flow: column;
+    align-items: center;
+	bottom: 0;
 }
 
 .profile-title {
@@ -56,12 +58,12 @@ footer {
 	font-family: 'Creepster';
 	font-size: 4rem;
 	color: rgb(151, 8, 8);
-	text-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.8);
 }
 
 #user-info {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 100%;
 	align-items: center;
 }
@@ -72,7 +74,6 @@ footer {
     height: 300px;
     border-radius: 80%;
 	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-	margin-left: 100px;
 }
 
 .profile-description {
@@ -84,6 +85,7 @@ footer {
 .library {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
     width: 100%;
 }
 
@@ -99,6 +101,10 @@ footer {
 	align-items: center;
 }
 
+.book p {
+	height: 200px;
+	overflow: auto;
+}
 
 img {
 	width: 250px;
@@ -116,6 +122,7 @@ img {
 	width: 100px;
 	margin-top: 4%;
 	border-radius: 10px;
+	align-items: flex-end;
 }
 
 #contact {
