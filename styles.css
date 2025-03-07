@@ -61,10 +61,12 @@ footer {
 
 .profile-title {
 	text-align: center;
-	margin-bottom: 10px;
+	margin: 2rem 0;
 	font-family: 'Creepster';
 	font-size: 4rem;
 	color: rgb(151, 8, 8);
+	text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9),
+                 -5px -5px 15px rgba(255, 0, 0, 0.7);
 }
 
 .user-info {
@@ -117,10 +119,10 @@ footer {
 .book {
 	flex: 1;
 	box-shadow: 0 0 20px rgb(70, 70, 70);
-	margin: 20px;
-	padding: 15px;
+	margin: 1.1rem;
+	padding: 1rem;
 	border-radius: 15px;
-	background-color: rgb(203, 202, 248);
+	background-color: rgb(237, 238, 232);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -132,6 +134,30 @@ footer {
 }
 
 img {
+	width: 250px;
+	height: 400px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#imagen1:hover {
+	content: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/The_shining_heres_johnny.jpg/170px-The_shining_heres_johnny.jpg");
+	width: 250px;
+	height: 400px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#imagen2:hover {
+	content: url("https://media.revistagq.com/photos/65f2cd2c6f3146304b0c4fc5/2:3/w_508,h_762,c_limit/salems-lot.jpg");
+	width: 250px;
+	height: 400px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#imagen3:hover {
+	content: url("https://i.etsystatic.com/9189665/r/il/cf216d/1346342765/il_fullxfull.1346342765_dxe7.jpg");
 	width: 250px;
 	height: 400px;
 	border-radius: 10px;
