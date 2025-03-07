@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -19,6 +20,10 @@ header {
 	align-items: center;
 	height: 100px;
 	margin-bottom: 10px;
+}
+
+main {
+	min-height: calc(100vh - 200px);
 }
 
 #nav-links {
@@ -47,11 +52,11 @@ header li , footer li{
 footer {
 	font-size: 20px;
 	display: flex;
-	flex-flow: column;
     align-items: center;
 	justify-content: center;
-	width: 100%;
-	bottom: 0;
+	background-color: blue;
+	background-image: linear-gradient(180deg, black, blue);
+	height: 100px;
 }
 
 .profile-title {
@@ -148,16 +153,28 @@ img {
 #contact {
 	display: flex;
 	justify-content: center;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
+	margin-top: 2rem;
 }
 
-fieldset {
-	width: 100%;
+legend {
+	font-weight: bold;
+	margin-left: 1rem;
+	padding: 0 0.3rem;
 }
 
-input, #favourite {
+input, #favourite, textarea {
 	margin: 10px;
 	width: 100%;
+	border-radius: 4px;
+}
+
+textarea {
+	height: 8rem;
+}
+
+#fav {
+	width: 300px;
 }
 
 .inputs {
@@ -167,5 +184,36 @@ input, #favourite {
 }
 
 #contact-form input, #contact-form select{
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+}
+
+fieldset {
+	border-radius: 10px;
+	margin: 2rem 0;
+}
+
+#botones {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	padding: 1rem;
+	border: none;
+}
+
+input[type="submit"], input[type="reset"] {
+    color: #fff;
+    padding: 0.6rem 0;
+	width: 8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	text-align: center;
+}
+
+input[type="submit"] {
+    background-color: rgb(3, 3, 183);
+}
+
+input[type="reset"] {
+    background-color: rgb(155, 7, 7);
 }

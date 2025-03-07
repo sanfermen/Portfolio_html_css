@@ -33,7 +33,7 @@
       <section id="contact">
         <form id="contact-form">
           <fieldset>
-            <legend>Contact Form</legend>
+            <legend>About you</legend>
 			<div class="inputs">
 				<label for="name">Name:</label>
 				<input type="text" name="name" id="name" />
@@ -43,19 +43,33 @@
 				<input type="email" name="email" id="email" />
 			</div>
 			<div class="inputs">
-				<label for="favourite">Your favourite book:</label>
-				<select name="favourite" id="favourite">
-					<option value="1">Carrie</option>
-					<option value="2">The shining</option>
-					<option value="3">It</option>
-					<option value="4">Salem's Lot</option>
-					<option value="5">Cujo</option>
-					<option value="6">Mr. Mercedes</option>
-					<option value="7">Holly</option>
-					<option value="8">Misery</option>
-				</select>
+				<label for="favourite" id="fav">Your favourite book:</label>
+				<input list="book_list" id="favourite" name="favourite">
+				<datalist id="book_list">
+					<option value="Carrie"></option>
+					<option value="The shining"></option>
+					<option value="It"></option>
+					<option value="Salme's Lot"></option>
+					<option value="Cujo"></option>
+					<option value="Mr.Mercedes"></option>
+					<option value="Holly"></option>
+					<option value="Misery"></option>
+				</datalist>
 			</div>
           </fieldset>
+
+		  <fieldset>
+            <legend>Tell me</legend>
+			<div class="inputs">
+				<label for="opinion">Your opinion:</label>
+				<textarea name="opinion" id="opinion" placeholder="Tell me whatever you want"></textarea>
+			</div>
+          </fieldset>
+
+		  <fieldset id="botones">
+			<input type="submit" value="Submit">
+			<input type="reset" name="reset" id="reset" value="Reset">
+		</fieldset>
         </form>
       </section>
     </main>
